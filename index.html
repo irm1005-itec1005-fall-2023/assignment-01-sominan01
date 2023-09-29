@@ -43,7 +43,8 @@
     <header>
       <!--Logo-->
       <img src="./logo.jpg"alt="Website Logo" width="100" height="100">
-      <p>Simply Musicals</p>
+      <h2>Simply Musicals</h2>
+      <p>More About Musical</p>
       <nav>
         <h3>Table of contents</h3>
         <ul>
@@ -94,18 +95,66 @@
         <li>Lee Young Mi</li>
       </section>
 
-      <section>
-        <h2 id="form">Opinion Panels</h2>
-        <p>How did you feel about this musical?</p>
+      <form>
+        <fieldset>
+          <legend>Your Opinion Matters!</legend>
+          <label for ="name">Name:</label>
+          <input 
+          type="text"
+          id="name"
+          name="name"
+          autocomplete="name"
+          required
+          />
 
-        <form>
-          <fieldset>
-            <legend></legend>
-          </fieldset>
-        </form>
-      </section>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" autocomplete="email"/>
 
+          <label for="survey">Did you like the show?</label>
+          <select id="survey" name="survey">
+            <option value="">--Please choose an option--</option>
+            <option value="survey1">Yes</option>
+            <option value="survey2">No</option>
+            <option value="survey3">It was okay</option>
+          </select>
+
+          <label for="opinion">Share your opinion:</label>
+          <textarea 
+          id="opinion"
+          name="opinion"
+          rows="4"
+          cols="50"
+          ></textarea>
+
+        </fieldset>
+
+        <fieldset>
+          <legend>Submit Opinion:</legend>
+          
+          <input type="checkbox" id="consent" name="consent" required/>
+          <label for="consent"> I consent to the use of my opinion.</label>
+
+          <input type="submit" value="Submit Opinion"/>
+        </fieldset>
+      </form>
     </main>
+
+   <footer>
+    <!--Logo-->
+    <img src="./logo.jpg"alt="Website Logo" width="100" height="100">
+    <!--Site Name-->
+    <h2>Simply Musicals</h2>
+
+    <nav>
+      <h3>Menu</h3>
+      <ul>
+        <li></li>
+      </ul>
+    </nav>
+
+    <p>&copy; 2023</p>
+    </footer>
+
     <!--
 
       LIST ANY CITATIONS HERE
